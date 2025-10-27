@@ -1,0 +1,76 @@
+package com.demo.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.demo.bean.LoginBean;
+
+public  class LoginDaoImpl implements LoginDao {
+
+	@Override
+	public LoginBean validateUser(String user, String pass) {
+		// TODO Auto-generated method stub
+		LoginBean lb =null;
+		Connection conn=DButil.getCon();
+		String query="select * from user4julydb where username=? and password=?";
+		try {
+			PreparedStatement ps= conn.prepareStatement(query);
+			ps.setString(1,user);
+			ps.setString(2,pass);
+			ResultSet rs= ps.executeQuery();
+			if(rs.next()){
+				lb=new LoginBean();
+				lb.setUsername(rs.getString(1));
+				lb.setPassword(rs.getString(2));
+				lb.setRole(rs.getString(3));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+//		LoginBean lb=new LoginBean();
+//		lb.setUsername("seed1");
+//		lb.setPassword("seed1");
+//		lb.setRole("user");
+		
+		
+		
+		return lb;
+	}
+
+	@Override
+	public LoginBean enterUser1(int user, String pass, int role) {
+		// TODO Auto-generated method stub
+		LoginBean lb =null;
+		Connection conn=DButil.getCon();
+		String query = "insert into user4julydb values(?,?,?)";
+			conn=DButil.getCon();
+			
+			try {
+				PreparedStatement ps=conn.prepareStatement(query);
+				ps.setInt(1, user);
+				ps.setString(2,pass);
+				ps.setInt(3,role);
+				
+				
+				boolean result = ps.execute();
+				int count= ps.getUpdateCount();
+				System.out.println(count+ " Inserted");
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	
+		return lb;
+	
+	}
+
+	
+
+
+
+}
