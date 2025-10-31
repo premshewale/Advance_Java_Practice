@@ -1,0 +1,40 @@
+package com.demo.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.demo.bean.LoginBean;
+
+public class RegistrationDaoImpl implements RegistrationDao {
+
+	@Override
+	public LoginBean insertUser(String user, String pass,String role) {
+		// TODO Auto-generated method stub
+		LoginBean lb =null;
+		Connection conn=DButil.getCon();
+	
+		String query="insert into user4julydb values(?,?,?)";
+		try {
+			
+			
+				PreparedStatement ps= conn.prepareStatement(query);
+				ps.setString(1,user);
+				ps.setString(2,pass);
+				ps.setString(3,role);
+			
+			boolean result =ps.execute();
+			int count =ps.getUpdateCount();
+			System.out.println(count+" Inserted");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		return lb;}}
+	
+
+

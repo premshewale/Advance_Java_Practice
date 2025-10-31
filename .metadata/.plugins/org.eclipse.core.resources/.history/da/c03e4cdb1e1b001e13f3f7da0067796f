@@ -1,0 +1,36 @@
+package com.day.one;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class JdbcDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			System.out.println("Driver Available ...");
+			String url ="jdbc:oracle:thin:@AGNI:1521:oracle12c";
+			Connection connection = 
+					DriverManager.getConnection(url,"fsdm24_1","fsdm24_1");
+			System.out.println("Connection Available ...");
+			
+			Statement statement = connection.createStatement();
+			String queary ="select * from emp4july";
+			ResultSet resultset = statement.executeQuery(queary);
+			while(resultset.next())
+				System.out.println(resultset.getInt(1)+" "+resultset.getString(2)+
+						" "+resultset.getDouble(3));
+			connection.close();
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

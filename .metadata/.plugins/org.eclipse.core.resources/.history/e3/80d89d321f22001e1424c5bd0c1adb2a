@@ -1,0 +1,8 @@
+package com.demo.dao;
+
+import com.demo.bean.LoginBean;
+
+public interface RegistrationDao {
+
+	LoginBean validateUser(String user,String pass);
+}

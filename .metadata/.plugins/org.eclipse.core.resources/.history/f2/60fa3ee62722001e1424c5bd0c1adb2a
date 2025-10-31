@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>registration</h2>
+<form action="RegisterServlet">
+Enter username : <input type="text" name="user"><br><br>
+Enter password : <input type="password" name="pass"><br><br>
+Enter role : <input type="text" name="role"><br><br>
+<input  type="submit" value="Create Account">
+<input type="reset">
+
+</form>
+
+
+</body>
+</html>

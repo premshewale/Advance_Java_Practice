@@ -1,0 +1,10 @@
+127.0.0.1 - - [01/Sep/2023:23:52:38 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:52:40 +0530] "GET /Day_8_3_RegistrationForm/ HTTP/1.1" 200 240
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:52:57 +0530] "GET /Day_8_3_RegistrationForm/registration.html HTTP/1.1" 200 441
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:52:59 +0530] "GET /Day_8_3_RegistrationForm/login.html HTTP/1.1" 200 377
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:54:35 +0530] "GET /Day_8_3_RegistrationForm/LoginServlet?user=user&pass=user HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:54:42 +0530] "GET /Day_8_3_RegistrationForm/LoginServlet?user=admin&pass=admin HTTP/1.1" 200 38
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:55:00 +0530] "GET /Day_8_3_RegistrationForm/InsertServlet?user=user12&pass=user12&role=user HTTP/1.1" 500 3405
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:58:54 +0530] "GET /Day_8_3_RegistrationForm/registration.html HTTP/1.1" 200 441
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:58:55 +0530] "GET /Day_8_3_RegistrationForm/registration.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Sep/2023:23:59:04 +0530] "GET /Day_8_3_RegistrationForm/InsertServlet?user=user101&pass=user101&role=user HTTP/1.1" 404 682

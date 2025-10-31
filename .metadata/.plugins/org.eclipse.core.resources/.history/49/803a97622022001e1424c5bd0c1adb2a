@@ -1,0 +1,16 @@
+package com.demo.service;
+
+import com.demo.bean.LoginBean;
+import com.demo.dao.LoginDao;
+import com.demo.dao.LoginDaoImpl;
+
+public class RegistrationServiceImpl implements LoginService {
+	
+	LoginDao logindao = new LoginDaoImpl();
+	@Override
+	public LoginBean insertUser(String user, String pass , String role) {
+		// TODO Auto-generated method stub
+		return RegistrationDao.insertUser(user, pass);
+	}
+
+}

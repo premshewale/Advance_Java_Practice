@@ -1,0 +1,4 @@
+driver = oracle.jdbc.driver.OracleDriver
+url = jdbc:oracle:thin:@AGNI:1521:oracle12c
+user = fsdm24_1
+passwd = fsdm24_1

@@ -1,0 +1,34 @@
+package com.day.one;
+
+import java.sql.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class InsertSQL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			String url ="jdbc:oracle:thin:@AGNI:1521:oracle12c";
+			Connection conn = 
+					DriverManager.getConnection(url,"fsdm24_1","fsdm24_1");
+			
+			String queary ="insert into emp4july values(12,'LMN',23456.23)";
+			Statement stmt = conn.createStatement();
+			int count =stmt.executeUpdate(queary);
+			System.out.println(count+" record inserted");
+	
+			conn.close();
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

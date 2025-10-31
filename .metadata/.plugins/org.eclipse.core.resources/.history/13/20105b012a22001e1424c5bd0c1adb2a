@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>index.html</h2>
+<a href="login.html">login</a>
+<a href="registration.html">Create account</a>
+</body>
+</html>

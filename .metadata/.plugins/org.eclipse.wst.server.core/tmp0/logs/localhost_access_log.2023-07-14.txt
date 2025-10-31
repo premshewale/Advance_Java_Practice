@@ -1,0 +1,6 @@
+127.0.0.1 - - [14/Jul/2023:19:23:43 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [14/Jul/2023:19:23:45 +0530] "GET /Day_6_1_login/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Jul/2023:19:23:47 +0530] "GET /Day_6_1_login/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Jul/2023:19:23:57 +0530] "GET /Day_6_1_login/LoginServlet?user=user1&pass=user1 HTTP/1.1" 200 424
+0:0:0:0:0:0:0:1 - - [14/Jul/2023:19:24:06 +0530] "GET /Day_6_1_login/LoginServlet?user=user&pass=user HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [14/Jul/2023:19:24:17 +0530] "GET /Day_6_1_login/LoginServlet?user=user3&pass=user3 HTTP/1.1" 200 24

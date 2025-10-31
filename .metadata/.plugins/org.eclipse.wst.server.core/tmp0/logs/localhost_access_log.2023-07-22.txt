@@ -1,0 +1,14 @@
+127.0.0.1 - - [22/Jul/2023:12:55:02 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:55:05 +0530] "GET /Day_10_3_JSTL/ HTTP/1.1" 200 402
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:55:08 +0530] "GET /Day_10_3_JSTL/Login.jsp HTTP/1.1" 200 395
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:55:15 +0530] "GET /Day_10_3_JSTL/home.jsp?user=seed HTTP/1.1" 200 446
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:55:25 +0530] "GET /Day_10_3_JSTL/home.jsp?user=seed1 HTTP/1.1" 200 439
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:55:34 +0530] "GET /Day_10_3_JSTL/home.jsp?user=seed HTTP/1.1" 200 446
+127.0.0.1 - - [22/Jul/2023:12:56:36 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:56:38 +0530] "GET /Day_6_1_login/ HTTP/1.1" 200 182
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:56:39 +0530] "GET /Day_6_1_login/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:56:48 +0530] "GET /Day_6_1_login/LoginServlet?user=seed&pass=seed HTTP/1.1" 200 424
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:56:58 +0530] "GET /Day_6_1_login/LoginServlet?user=user&pass=user HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:57:19 +0530] "GET /Day_6_1_login/LoginServlet?user=user1&pass=user1 HTTP/1.1" 200 424
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:57:30 +0530] "GET /Day_6_1_login/LoginServlet?user=user2&pass=user2 HTTP/1.1" 200 24
+0:0:0:0:0:0:0:1 - - [22/Jul/2023:12:58:24 +0530] "GET /Day_6_1_login/LoginServlet?user=user3&pass=user3 HTTP/1.1" 200 24

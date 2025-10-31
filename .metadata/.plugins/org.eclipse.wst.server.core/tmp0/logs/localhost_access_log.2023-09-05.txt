@@ -1,0 +1,5 @@
+127.0.0.1 - - [05/Sep/2023:14:27:31 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Sep/2023:14:27:33 +0530] "GET /Day_8_3_RegistrationForm/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Sep/2023:14:27:36 +0530] "GET /Day_8_3_RegistrationForm/Password.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Sep/2023:14:27:52 +0530] "POST /Day_8_3_RegistrationForm/ChangePassword HTTP/1.1" 200 52
+0:0:0:0:0:0:0:1 - - [05/Sep/2023:14:28:56 +0530] "POST /Day_8_3_RegistrationForm/ChangePassword HTTP/1.1" 200 43
